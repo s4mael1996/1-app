@@ -296,7 +296,7 @@ reset(){
     </div>
     <label htmlFor="semester" className="col-sm-2 col-form-label">Semester</label>
     <div className="col-sm-2">
-      <input type="text" className="form-control" id="percentage" value={this.state.semester} name='semester' onChange={this.handleChange.bind(this)}/>
+      <input type="text" className="form-control" id="semester" value={this.state.semester} name='semester' onChange={this.handleChange.bind(this)}/>
     </div>
   </div>
   <div className="form-group row" >
