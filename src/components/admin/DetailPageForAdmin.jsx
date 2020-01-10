@@ -37,7 +37,7 @@ getDataFromDb=()=>{
   var pos = res.indexOf('projects');
   var result = res[pos+1]; 
 
-    axios.get(`http://localhost:3000/projects/${result}`)
+    axios.get(`https://nhatsfirstapp.herokuapp.com/projects/${result}`)
       .then(res => {
         let project = res.data;
         console.log(project[0].sID)
@@ -115,7 +115,7 @@ addNew = () => {
     var res = url.split("/");
     var pos = res.indexOf('projects');
     var result = res[pos+1]; 
-    axios.put(`http://localhost:3000/update/${result}`, { 
+    axios.put(`https://nhatsfirstapp.herokuapp.com/update/${result}`, { 
         sID:this.state.sID,
         sName:this.state.sName,
         sYear:this.state.sYear,
@@ -137,7 +137,7 @@ addNew = () => {
     
   }};
   delete = () => {
-    axios.delete('http://localhost:3000/delete', {
+    axios.delete('https://nhatsfirstapp.herokuapp.com/delete', {
       data: {
         pID: this.state.pID
       }
