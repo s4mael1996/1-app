@@ -32,7 +32,7 @@ class App extends React.Component {
   };
   }
   getDataFromDb=()=>{
-    axios.get('http://https://nhatsfirstapp.herokuapp.com/')
+    axios.get('https://nhatsfirstapp.herokuapp.com/')
       .then(res => {
         let projects = res.data;
         
