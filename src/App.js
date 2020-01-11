@@ -174,7 +174,7 @@ function sortAlphaNum(a, b) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item " >
-            <Link to="/" className="nav-link" >Home <span className="sr-only">(current)</span></Link>
+            <Link to="/" className="nav-link" >Home</Link>
           </li>
           <li className="nav-item" >
             <Link to="/admin/projects" className="nav-link"  >Admin</Link>
